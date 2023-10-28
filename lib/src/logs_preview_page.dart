@@ -104,6 +104,7 @@ class _LogsPreviewPageState extends State<LogsPreviewPage> {
                       }
 
                       final List<String> logs = snapshot.data ?? [];
+                      logs.sort((a, b) => b.compareTo(a));
 
                       return ListView.separated(
                         physics: BouncingScrollPhysics(),
