@@ -2,8 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/sublime_log.svg)](https://pub.dev/packages/sublime_log)
 [![pub points](https://img.shields.io/pub/points/sublime_log?color=2E8B57&label=pub%20points)](https://pub.dev/packages/sublime_log/score)
-
-[//]: # ([![sublime_log]&#40;https://github.com/tusaamf/sublime_log/sublime_log.yaml/badge.svg&#41;]&#40;https://github.com/tusaamf/sublime_log/sublime_log.yaml&#41;)
+[![sublime_log](https://github.com/tusaamf/sublime_log/actions/workflows/sublime_log.yml/badge.svg)](https://github.com/tusaamf/sublime_log/actions/workflows/sublime_log.yml)
 
 Save custom log message and view in application, share to other develop.
 
