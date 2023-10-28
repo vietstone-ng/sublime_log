@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 import 'logs_preview_page.dart';
 
 class SublimeLog {
+  /// Show logs of the application. [quotes] show quotes to have fun.
   static Future<T?> showLogsPreview<T extends Object?>(BuildContext context,
       {List<String>? quotes}) {
     return showGeneralDialog(
@@ -26,6 +27,10 @@ class SublimeLog {
     );
   }
 
+  /// Save log message
+  /// [message] text to log
+  /// [stackTrace] log stacktrace
+  /// [tag] top label of logged text, default is `Other`
   static void log(
       {required dynamic message,
       StackTrace? stackTrace,
@@ -56,6 +61,7 @@ class SublimeLog {
     await file.writeAsString(logStr, mode: FileMode.append);
   }
 
+  /// Get all logs file of the application.
   static Future<List<String>> getAllLogFiles() async {
     final path = '${(await getApplicationDocumentsDirectory()).path}/logs';
     final directory = Directory(path);
@@ -69,6 +75,7 @@ class SublimeLog {
         .toList();
   }
 
+  /// Get log detail as text plain by file [name].
   static Future<String> getLogDetail(String name) async {
     final path = '${(await getApplicationDocumentsDirectory()).path}/logs';
     final file = File('$path/$name');
@@ -78,6 +85,7 @@ class SublimeLog {
     return '';
   }
 
+  /// Get log detail file by file [name].
   static Future<File?> getLogFileByName(String name) async {
     final path = '${(await getApplicationDocumentsDirectory()).path}/logs';
     final file = File('$path/$name');
