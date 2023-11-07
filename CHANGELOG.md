@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4] - 7st November 2023
+
+* Fix crash when send logging message is not 'String' type
+
+## [1.0.3] - 1st November 2023
+
+* Fix crash when send logging message is not 'String' type
+
 ## [1.0.2] - 28th October 2023
 
 * Sort the logs by date (DESC)

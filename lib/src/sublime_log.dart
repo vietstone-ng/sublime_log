@@ -36,7 +36,7 @@ class SublimeLog {
       StackTrace? stackTrace,
       String tag = 'Other'}) {
     final String logTime = _format(DateTime.now(), 'MM-dd-yyyy HH:mm:ss');
-    final List<String> logStr = <String>[
+    final logStr = [
       '',
       '--------------- $tag ($logTime) ---------------',
       message,
